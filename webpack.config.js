@@ -11,7 +11,7 @@ module.exports = {
   output: {
     filename: filename('js'),
     path: path.resolve(__dirname, 'app'),
-    assetModuleFilename: "assets/img/[hash]-[name][ext][query]",
+    assetModuleFilename: "assets/img/[name][ext][query]",
     clean: true
   },
   devtool: isDev && 'source-map',
