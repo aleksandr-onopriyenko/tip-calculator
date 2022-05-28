@@ -2,10 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tip Calculator</title>
   </head>
   <body>
+  <section class="app">
+    <header>
+      <h1 class="app__title">Splitter</h1>
+    </header>
+    <form class="app-calculator">
+      <div class="app-calculator__wrapper">
+        <div class="app-calculator__bill">
+          <label for="bill">Bill</label>
+          <div>
+            <img src="assets/img/icon-dollar.svg" alt="dollar">
+            <input type="text" name="bill" id="bill" />
+          </div>
+        </div>
+        <div class="app-calculator-tips">
+          <label for="tip-15">Select Tip % </label>
+          <button type="button" id="tip-5" class="app-calculator-tips__item">5%</button>
+          <button type="button" id="tip-10" class="app-calculator-tips__item">15%</button>
+          <button type="button" id="tip-15" class="app-calculator-tips__item">10%</button>
+          <button type="button" id="tip-25" class="app-calculator-tips__item">25%</button>
+          <button type="button" id="tip-50" class="app-calculator-tips__item">50%</button>
+          <input id="tip-custom" type="text" placeholder="Custom" />
+        </div>
+        <div class="app-calculator__persons">
+          <label for="person">Number of People</label>
+          <div>
+            <img src="assets/img/icon-person.svg" alt="person">
+          <input type="number" name="person" id="person" placeholder="Enter number of people" />
+          </div>
+        </div>
+        <div class="app-calculator__total">
+          <div class="app-calculator__total-item">
+            <div class="app-calculator__total-title">Tip Amount</div>
+            <div class="app-calculator__total-amount">$4.27</div>
+          </div>
+          <div class="app-calculator__total-item">
+            <div class="app-calculator__total-title">Total</div>
+            <div class="app-calculator__total-amount">$32.79</div>
+          </div>
+          <button type="reset">reset</button>
+        </div>
+      </div>
+    </form>
+  </section>
   </body>
 </html>

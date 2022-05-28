@@ -1,1 +1,13 @@
 @use "reset";
+@use '../variables' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+body {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  background-color: $primary;
+  color: $gray-cyan-600;
+  line-height: $line-height;
+}
