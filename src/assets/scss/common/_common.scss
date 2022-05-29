@@ -1,5 +1,6 @@
 @use "reset";
 @use '../variables' as *;
+@use '../mixins' as *;
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 
@@ -30,6 +31,11 @@ input {
   border-radius: 8px;
   border: 1px solid transparent;
   color: $gray-cyan-400;
+  box-shadow: 1px 1px 2px 1px $gray-cyan-600;
+
+  &::placeholder {
+    font-size: 1rem;
+  }
 
 
   &:hover,
