@@ -1,3 +1,9 @@
 import '../scss/style.scss';
-const log = () => console.log('Hello babel')
-log()
+import Calculate from "./CalculateTips";
+const app = new Calculate('.app-calculator')
+
+app.init()
+
+
+
+

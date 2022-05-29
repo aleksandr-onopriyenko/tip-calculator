@@ -31,12 +31,10 @@ input {
   border-radius: 8px;
   border: 1px solid transparent;
   color: $gray-cyan-400;
-  box-shadow: 1px 1px 2px 1px $gray-cyan-600;
 
   &::placeholder {
     font-size: 1rem;
   }
-
 
   &:hover,
   &:focus {
