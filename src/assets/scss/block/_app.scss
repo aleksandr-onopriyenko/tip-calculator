@@ -9,10 +9,6 @@
   max-width: 1000px;
   margin: 0 auto;
 
-  @include md-min {
-    transform: scale(0.8);
-  }
-
   &__title {
     width: 100px;
     word-wrap: break-word;
